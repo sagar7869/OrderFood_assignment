@@ -18,11 +18,10 @@ li {
   list-style: none;
   letter-spacing: 2px;
   font-size: large;
-  /* font-family: "Times New Roman", Times, serif; */
-  font-family: 'Roboto Slab', serif;
-
+  font-family: "Roboto Slab", serif;
 }
 
+/*............. NAVIGATION MENUS ................*/
 .navbar {
   display: flex;
   align-items: center;
@@ -34,14 +33,11 @@ li {
 
 .nav-links a {
   color: black;
-
 }
-
 
 ul {
   margin-left: 12rem;
 }
-
 
 .menu {
   display: flex;
@@ -58,19 +54,15 @@ ul {
   padding: 5px 14px;
 }
 
-
-
 input[type="checkbox"] {
   display: none;
 }
-
 
 .hamburger {
   display: none;
   font-size: 24px;
   user-select: none;
 }
-
 
 .mainLogo {
   display: flex;
@@ -94,6 +86,7 @@ input[type="checkbox"] {
 }
 
 
+/*............. NAVIGATION MENUS respon ................*/
 @media (max-width: 1186px) {
   .menu {
     gap: 2em;
@@ -127,7 +120,6 @@ input[type="checkbox"] {
     right: 0;
     left: 0;
     text-align: center;
-
   }
 
   .menu li {
@@ -143,41 +135,36 @@ input[type="checkbox"] {
     transition: 0.3s ease;
   }
 
-  .menu li+li {
+  .menu li + li {
     margin-top: 12px;
   }
 
-  input[type="checkbox"]:checked~.menu {
+  input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
 
   .hamburger {
     display: inline-block;
     margin-right: 0px;
-    
-  
   }
 }
 
 
+/*................ SECTION................... */
 section {
   background-image: linear-gradient(to right, #ff85a8, #ffcd68);
   width: 100%;
 }
 
-
-
 .container {
   width: 100%;
 }
-
 
 .container img {
   width: 100%;
   object-fit: cover;
   padding-bottom: 90px;
 }
-
 
 .container-text {
   position: absolute;
@@ -191,13 +178,11 @@ section {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .container-text h1 {
   font-size: 3rem;
   letter-spacing: 4px;
   margin-bottom: 0.5rem;
 }
-
 
 .container p {
   letter-spacing: 1px;
@@ -206,8 +191,9 @@ section {
 }
 
 
-@media (max-width: 1090px) {
 
+/*................ SECTION respon................... */
+@media (max-width: 1090px) {
   .container-text h1 {
     font-size: 2rem;
     letter-spacing: 1px;
@@ -223,8 +209,6 @@ section {
 }
 
 @media (max-width: 827px) {
-
-
   .container-text {
     top: 26%;
     left: 30px;
@@ -243,8 +227,6 @@ section {
     padding: 0;
     letter-spacing: normal;
   }
-
-
 }
 
 @media (max-width: 552px) {
@@ -277,31 +259,22 @@ section {
     width: 60%;
     height: 20%;
   }
-
 }
 
 
+
+/*............... FOOTER ..............*/
 footer {
   background-image: linear-gradient(to right, #da65c4, #fcdc5b);
   width: 100%;
-
 }
 
 
-
-/* FOOTER */
 .container2 {
   margin-top: 10px;
   position: relative;
   color: white;
-  /* letter-spacing: 5px; */
-  /* font-size: larger;
-    font-family: sans-serif; */
   padding-top: 4rem;
-
-
-
-
 }
 
 .center {
@@ -309,14 +282,10 @@ footer {
   top: 3px;
   font-size: 25px;
   padding: 0 15px 0 15px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   letter-spacing: 6px;
   left: 50%;
   transform: translate(-50%, 0);
-  ;
-
-
-
 }
 
 .cards {
@@ -334,7 +303,7 @@ footer {
   align-items: center;
   background-color: white;
   padding: 1.3rem 1.3rem 1.3rem 1.3rem;
-  
+
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   cursor: pointer;
@@ -343,11 +312,8 @@ footer {
 .card .card-text {
   margin-bottom: 8px;
   font-size: 16px;
-  font-family: 'DM Sans', sans-serif;
-
-
+  font-family: "DM Sans", sans-serif;
 }
-
 
 .card img {
   height: 250px;
@@ -369,11 +335,9 @@ footer {
   color: rgba(0, 0, 0, 0.8);
 }
 
-
 .button {
   display: flex;
   justify-content: center;
-
 }
 
 .button button {
@@ -390,44 +354,34 @@ footer {
 }
 
 
+/*............... FOOTER  respon..............*/
 @media (max-width: 900px) {
-
-
   .container2 .center {
     padding-top: 0.2rem;
   }
   .center {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .cards {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
-    /* height: 140vh; */
+    justify-content: space-around;
     height: auto;
     margin-top: 2px;
     padding: 0.1rem 0.1rem 0.1rem 0.1rem;
-      border-top-right-radius: 2%;
-      border-bottom-left-radius: 2%;
-    /* .line {
-      width: 100%;
-      height: 30px;
-      top: 20px;
-    } */
-
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
   }
 
   .card {
-    margin-top: 8px;
+    margin-top: 35px;
   }
 
   .card img {
     height: 280px;
     width: 280px;
-
-
   }
 
   .card p {
@@ -442,14 +396,13 @@ footer {
 @media (max-width: 480px) {
   .container2 .center {
     font-size: 10px;
-
   }
 
   .cards {
     margin-top: -1rem;
     padding: 0.2rem 0.2rem 0.2rem 0.2rem;
     border-top-right-radius: 5%;
-      border-bottom-left-radius: 5%;
+    border-bottom-left-radius: 5%;
   }
 
   .card img {
